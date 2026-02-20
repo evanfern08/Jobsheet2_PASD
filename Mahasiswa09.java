@@ -6,6 +6,9 @@ public class Mahasiswa09 {
         mhs1.nim = "254107060";
         mhs1.kelas ="SIB-1D";
         mhs1.ipk = 3.8;
+
+        mhs1.tampilkanInformasi();
+        System.out.println("Nilai Kinerja: " + mhs1.nilaiKinerja());
     }
     String nama;
     String nim;
