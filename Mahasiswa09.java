@@ -1,4 +1,12 @@
 public class Mahasiswa09 {
+    public static void main(String[] args) {
+        
+        Mahasiswa09 mhs1 = new Mahasiswa09();
+        mhs1.nama = "Evan";
+        mhs1.nim = "254107060";
+        mhs1.kelas ="SIB-1D";
+        mhs1.ipk = 3.8;
+    }
     String nama;
     String nim;
     String kelas;
@@ -14,7 +22,11 @@ public class Mahasiswa09 {
         kelas = kelasBaru;
     }
     void updateIpk(double ipkBaru) {
-        ipk = ipkBaru;
+        if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
+            ipk = ipkBaru;
+        } else {
+            System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0");
+        }
     }
 
     String nilaiKinerja() {
